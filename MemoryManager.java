@@ -100,6 +100,7 @@ class MemoryManager {
         for (int i = 0; i < PartitionTable.size(); i++) {
             Partition partition = PartitionTable.get(i);
             if (partition.getStatus().equals("已分") && partition.getStartAddress() == startAddress) {
+                System.out.println("释放内存，起始地址: " + startAddress);
                 partition.setStatus("未分");
                 MergePartitions(i);
 
