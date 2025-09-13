@@ -134,7 +134,7 @@ class OS implements MemoryManager.OSListener {
                             System.out.println("处理器 " + processorId + " 开始执行进程 " + nextProcess.getID());
 
                             // 模拟进程执行一个时间片
-                            Thread.sleep((Main.timeSlice) * 2000);
+                            Thread.sleep((Main.timeSlice) * 10000);
 
                             // 更新进程状态
                             synchronized (readyQueueLock) {

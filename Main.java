@@ -5,8 +5,8 @@ public class Main {
     public static int timeSlice = 1;
 
     public static void main(String args[]) {
-        // 设置处理器数量为4核
-        OS curOS = new OS(4);
+        // 设置处理器数量为2核
+        OS curOS = new OS(2);
 
         // 创建主窗口
         JFrame frame = new JFrame("多处理器进程调度系统");
